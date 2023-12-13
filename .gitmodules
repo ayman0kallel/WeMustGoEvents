@@ -1,0 +1,3 @@
+[submodule "WeMustGoEvents-Backend"]
+	path = WeMustGoEvents-Backend
+	url = ./WeMustGoEvents-Backend
