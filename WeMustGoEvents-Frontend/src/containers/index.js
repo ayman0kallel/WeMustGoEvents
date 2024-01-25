@@ -3,3 +3,4 @@ export { default as Footer } from './footer/Footer';
 export { default as Header } from './header/Header';
 export { default as Carte } from './carte/Carte';
 export { default as Signup } from './signup/Signup';
+export { default as Signin } from './signin/Signin';

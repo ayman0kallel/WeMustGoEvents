@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/WeMustGoLogo.png';
-// import { Link} from "react-router-dom";
 import './navbar.css';
 
 const Navbar = () => {
@@ -10,6 +9,9 @@ const Navbar = () => {
   const navigate = useNavigate();
   const redirectSignup = () =>{
     navigate('/signup');
+  }
+  const redirectSignin = () =>{
+    navigate('/signin');
   }
 
   return (
@@ -25,8 +27,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-sign">
-        <p>Sign in</p>
-        {/* <Link to="/signup">Sign up</Link> */}
+        <button type="button" onClick={redirectSignin}>Sign in</button>
         <button type="button" onClick={redirectSignup}>Sign up</button>
       </div>
       <div className="navbar-menu">
@@ -41,7 +42,7 @@ const Navbar = () => {
             <p><a href="#carte">Carte</a></p>
           </div>
           <div className="navbar-menu_container-links-sign">
-            <p>Sign in</p>
+            <button type="button" onClick={redirectSignin}>Sign in</button>
             <button type="button" onClick={redirectSignup}>Sign up</button>
           </div>
         </div>

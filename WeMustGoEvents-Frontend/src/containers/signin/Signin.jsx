@@ -1,8 +1,8 @@
-import './signup.css'
+import './signin.css'
 import { Button,Checkbox,FormControlLabel,TextField, Typography } from '@mui/material'
 import { useForm } from 'react-hook-form'
 import image from '../../assets/homeImg.jpg'
-const Signup = () => {
+const Signin = () => {
   const {register,handleSubmit,formState:{errors}}=useForm()
   const onSubmit=(data)=>{
     console.log(data);
@@ -11,16 +11,9 @@ const Signup = () => {
 <div className="Auth">
       <img src={image} alt="" />
       <form action="" method="post" onSubmit={handleSubmit(onSubmit)}>
-        <Typography variant='h4'color="#FF8A71">Sign Up</Typography>
+        <Typography variant='h4'color="#FF8A71">Sign In</Typography>
         
         <div className="formgroup">
-        
-        <TextField 
-        {...register('name',{required:"Name Field Required",
-        maxLength:{value:15,message:'Maximun 15 Characters'}})} 
-        type='text' label="Name"  variant="outlined" />
-        <Typography color="error" variant='span'>{errors?.name && errors.name.message}</Typography>
-
         <TextField 
         {...register('email',{required:"Email Field Required"})} 
         type='email' label="Email"  variant="outlined" />
@@ -43,4 +36,4 @@ const Signup = () => {
   );
 }
 
-export default Signup;
+export default Signin;
