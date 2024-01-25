@@ -1,5 +1,8 @@
-import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
-import { CTA, Brand, Navbar } from './components';
+
+// import { BrowserRouter as Router} from "react-router-dom"
+
+import { Footer, Blog, Carte, Header } from './containers';
+import { Navbar } from './components';
 
 import './App.css';
 
@@ -11,13 +14,8 @@ function App() {
             <Navbar />
             <Header />
         </div>
-        <Brand />
         <Blog />
-        <WhatGPT3 />
-        <Features />
-        <Possibility />
-        <CTA />
-        
+        <Carte />
         <Footer />
     </div>
   )
