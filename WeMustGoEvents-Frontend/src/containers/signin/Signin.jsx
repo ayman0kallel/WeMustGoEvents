@@ -1,11 +1,24 @@
 import './signin.css'
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; 
 import { Button,Checkbox,FormControlLabel,TextField, Typography } from '@mui/material'
 import { useForm } from 'react-hook-form'
 import image from '../../assets/homeImg.jpg'
+
 const Signin = () => {
+  const navigate = useNavigate();
   const {register,handleSubmit,formState:{errors}}=useForm()
-  const onSubmit=(data)=>{
-    console.log(data);
+  const onSubmit= async (data)=>{
+    try {
+      // Make a POST request to Symfony backend
+      const response = await axios.post('http://127.0.0.1:8000/signin', data);
+      console.log(response);
+      // Handle successful signin, e.g., redirect to dashboard
+      navigate('/');
+    } catch (error) {
+      console.error('Signin failed:', error.response.data.message);
+      // Handle signin failure, show error message to the user
+    }
   }
   return (
 <div className="Auth">

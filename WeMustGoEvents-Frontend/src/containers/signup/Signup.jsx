@@ -1,11 +1,22 @@
 import './signup.css'
+import axios from 'axios'; 
+import { useNavigate } from 'react-router-dom';
 import { Button,Checkbox,FormControlLabel,TextField, Typography } from '@mui/material'
 import { useForm } from 'react-hook-form'
 import image from '../../assets/homeImg.jpg'
 const Signup = () => {
+  const navigate = useNavigate();
   const {register,handleSubmit,formState:{errors}}=useForm()
-  const onSubmit=(data)=>{
-    console.log(data);
+  const onSubmit= async (data)=>{
+    try {
+      // Make a POST request to Symfony backend
+      const response = await axios.post('http://127.0.0.1:8000/signup', data);
+      navigate('/signin');
+      console.log(response);
+    } catch (error) {
+      console.error('Signup failed:', error.response.data.message);
+      // Handle signup failure, show error message to the user
+    }
   }
   return (
 <div className="Auth">
