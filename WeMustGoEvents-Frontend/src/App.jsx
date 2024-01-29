@@ -1,7 +1,7 @@
 
 // import { BrowserRouter as Router} from "react-router-dom"
 
-import { Footer, Blog, Carte, Header } from './containers';
+import { Footer, Events, Carte, Header } from './containers';
 import { Navbar } from './components';
 
 import './App.css';
@@ -14,7 +14,7 @@ function App() {
             <Navbar />
             <Header />
         </div>
-        <Blog />
+        <Events />
         <Carte />
         <Footer />
     </div>

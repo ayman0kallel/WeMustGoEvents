@@ -38,11 +38,11 @@ const Signup = () => {
         <Typography color="error" variant='span'>{errors?.email && errors.email.message}</Typography>
 
         <TextField 
-        {...register('psw',{required:"Password Field Required",
+        {...register('password',{required:"Password Field Required",
         maxLength:{value:15,message:"Maximun 15 Characters"},
         minLength:{value:4,message:"Minimun 4 Characters"}})} 
         type='password' label="Password"  variant="outlined" />
-        <Typography color="error" variant='span'>{errors?.psw && errors.psw.message}</Typography>
+        <Typography color="error" variant='span'>{errors?.password && errors.password.message}</Typography>
 
         <FormControlLabel control={<Checkbox color="error"/>} label="Remember Me" />
         <Button type='submit' variant="contained">Create Account</Button>
