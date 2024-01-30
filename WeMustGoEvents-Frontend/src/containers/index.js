@@ -4,3 +4,4 @@ export { default as Header } from './header/Header';
 export { default as Carte } from './carte/Carte';
 export { default as Signup } from './signup/Signup';
 export { default as Signin } from './signin/Signin';
+export { default as EventPage } from './eventPage/EventPage';

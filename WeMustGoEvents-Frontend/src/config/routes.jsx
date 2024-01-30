@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import { useRoutes } from "react-router";
 import App from "../App";
-import { Signin } from "../containers";
+import { EventPage, Signin } from "../containers";
 
 const Signup = lazy(() => import("../containers/signup/Signup"))
 
@@ -22,6 +22,10 @@ const AppRoutes = () =>{
         {
             path: "/signin",
             element: <Signin/>
+        },
+        {
+            path: "/article/:id",
+            element: <EventPage/>
         },
     ]);
     return <Suspense fallback={<div>Loading...</div>}>{element}</Suspense>;

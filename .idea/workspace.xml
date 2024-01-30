@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3797e7ba-83ab-474a-93e6-dbb2e35d6309" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Backend/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Backend/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMustGoEvents-Frontend/src/containers/events/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/WeMustGoEvents-Frontend/src/containers/events/Events.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/WeMustGoEvents-Backend" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "origin/main",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>

@@ -1,6 +1,7 @@
 import './article.css';
+import { Link } from 'react-router-dom';
 
-const Article = ({ imgUrl, date, text }) => (
+const Article = ({ id, imgUrl, date, text }) => (
   <div className="events-container_article">
     <div className="events-container_article-image">
       <img src={imgUrl} alt="blog_image" />
@@ -10,7 +11,7 @@ const Article = ({ imgUrl, date, text }) => (
         <p>{date}</p>
         <h3>{text}</h3>
       </div>
-      <p>Découvrir</p>
+      <Link to={`/article/${id}`}>Découvrir</Link>
     </div>
   </div>
 );
