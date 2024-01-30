@@ -5,3 +5,5 @@ export { default as Carte } from './carte/Carte';
 export { default as Signup } from './signup/Signup';
 export { default as Signin } from './signin/Signin';
 export { default as EventPage } from './eventPage/EventPage';
+export { default as Favourite } from './favourite/Favourite';
+export { default as AdminPage } from './adminPage/AdminPage';

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/WeMustGoLogo.png';
 import './navbar.css';
@@ -9,6 +9,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
+  const [role, setRole] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -27,9 +28,8 @@ const Navbar = () => {
         },
       });
         setUsername(response.data.name);
+        setRole(response.data.roles)
         setIsLoggedIn(true);
-        console.log("isloggedIn",isLoggedIn);
-        console.log("name: ",username);
 
       } catch (error) {
         console.error('Error fetching user data!!!!', error);
@@ -64,6 +64,15 @@ const Navbar = () => {
           <p><a href="#home">Acceuil</a></p>
           <p><a href="#events">Évènements</a></p>
           <p><a href="#carte">Carte</a></p>
+          {
+          role[0] === "ROLE_USER" ? (
+            <div><p><Link to={'/favourite'}>Favoris</Link></p></div>
+          ) : role[0] === "ROLE_ADMIN" ? (
+            <div><p><Link to={'/admin'}>Admin</Link></p></div>
+          ) : (
+            <div></div>
+          )
+          }
         </div>
       </div>
       {isLoggedIn ? (
